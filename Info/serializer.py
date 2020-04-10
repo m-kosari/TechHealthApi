@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Account
+from .models import Reports
 
 
 class TechSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Account
-        fields = '__all__'
+        model = Reports
+        fields = ['email','name']

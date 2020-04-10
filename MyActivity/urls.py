@@ -21,8 +21,8 @@ import Info.views as test_app
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'', test_app.AllTech.as_view()),
-    re_path(r'(?P<pk>\d+)', test_app.TechView.as_view()),
-    path('api/account/',include('Info.api.url', 'account_api')),
-    path('api/account/', include('Info.api.url', 'account_api')),
+    # re_path(r'(?P<pk>\d+)', test_app.TechView.as_view()),
+    path('api/account/',include('Info.api.url', 'register')),
+    # path('api/account/', include('Info.api.url', 'account_api')),
 
 ]

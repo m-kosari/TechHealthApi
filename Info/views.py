@@ -30,7 +30,7 @@ class TechView(APIView):
         except:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
-    def delete(self, request, pk, format=None):
-        tech = Account.objects.get(pk=pk)
-        tech.delete()
-        return Response(status=status.HTTP_200_OK)
+    # def delete(self, request, pk, format=None):
+    #     tech = Reports.objects.get(pk=pk)
+    #     tech.delete()
+    #     return Response(status=status.HTTP_200_OK)
